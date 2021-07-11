@@ -9,13 +9,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.red-text {
+    color: #FC6D6D;
+}
+
+/* Header CSS */
+header {
+    background: #343F4F;
+}
+
+/* Navbar CSS */
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #FC6D6D;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FC6D6D;
+}
+
 /* Typing Text CSS */
 .typing-text-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background: #343F4F;
+    padding-top: 120px;
 }
 
 .wrapper{
@@ -76,4 +99,25 @@
     100%{
       left: 0;
     }
+}
+
+/* For Brand Logo */
+.brand-logo {
+    width: 40px;
+    margin-right: 20px;
+}
+
+/* For Down Arrow Animation */
+.down-arrow {
+    animation-iteration-count: infinite !important;
+    animation-duration: 1s;
+    transform-origin: bottom;
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(10px); }
+    100% { transform: translateY(0); }
 }
