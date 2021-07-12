@@ -19,6 +19,10 @@ header {
 }
 
 /* Navbar CSS */
+.navbar-section {
+    background-color: #343f4fd7;
+}
+
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
     color: #FC6D6D;
 }
@@ -39,6 +43,7 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding-top: 100px;
 }
 
 .wrapper{
@@ -108,6 +113,10 @@ header {
 }
 
 /* For Down Arrow Animation */
+.second-down-arrow {
+    margin-top: -36px;
+}
+
 .down-arrow {
     animation-iteration-count: infinite !important;
     animation-duration: 1s;
